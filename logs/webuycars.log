@@ -1,0 +1,97 @@
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Error in open.connection(con, "rb") : 
+  cannot open the connection to 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000'
+Calls: fromJSON ... parse_and_simplify -> parseJSON -> parse_con -> open -> open.connection
+In addition: Warning message:
+In open.connection(con, "rb") :
+  cannot open URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': HTTP status was '502 Bad Gateway'
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+INFO [2025-02-27 05:00:24] Retrieved 9742 rows from the webuycars API
+INFO [2025-02-27 05:00:25] Identified 871 new rows for insertion
+INFO [2025-02-27 05:00:25] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_7996.csv
+INFO [2025-02-27 05:00:25] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_7996.csv
+INFO [2025-02-27 05:00:25] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-02-27 05:00:25] Deleting file /home/gpadmin/data/production/tmp/temp_table_7996.csv
+INFO [2025-02-27 05:00:25] Successfully wrote 871 new rows to the greenplum
+INFO [2025-02-27 05:00:25] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1892.csv
+INFO [2025-02-27 05:00:25] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1892.csv
+INFO [2025-02-27 05:00:25] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-02-27 05:00:25] Deleting file /home/gpadmin/data/production/tmp/temp_table_1892.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Error in open.connection(con, "rb") : 
+  cannot open the connection to 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000'
+Calls: fromJSON ... parse_and_simplify -> parseJSON -> parse_con -> open -> open.connection
+In addition: Warning message:
+In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': Timeout of 60 seconds was reached
+Execution halted
