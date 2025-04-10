@@ -9,6 +9,7 @@ library(purrr)
 library(logger)
 
 
+
 # FUNCTIONS ---------------------------------------------------------------
 
 fetch_webuycars <- function(url, max_retries, wait_time) {
@@ -17,7 +18,7 @@ fetch_webuycars <- function(url, max_retries, wait_time) {
   while (attempt <= max_retries) {
     
     try({
-      response <- fromJSON(url, simplifyVector = TRUE, flatten = TRUE)
+      response <- GET(url, config(ssl_verifypeer = FALSE))
       if(!is.null(response)) {
         
         return(response)
@@ -34,11 +35,39 @@ fetch_webuycars <- function(url, max_retries, wait_time) {
   
 }
 
+
+# fetch_webuycars <- function(url, max_retries, wait_time) {
+#   
+#   attempt <- 1
+#   while (attempt <= max_retries) {
+#     
+#     try({
+#       response <- fromJSON(url, simplifyVector = TRUE, flatten = TRUE)
+#       if(!is.null(response)) {
+#         
+#         return(response)
+#       }
+#     }, silent = TRUE)
+#     
+#     message(paste("Attempt", attempt, "failed. Retrying in", wait_time, "seconds..."))
+#     
+#     Sys.sleep(wait_time)
+#     attempt <- attempt + 1
+#   }
+#   
+#   stop("Failed to retrieve data after", max_retries, "attempts. Attempt manually.")
+#   
+# }
+
 # LOAD DATA ---------------------------------------------------------------
 
-url <- "https://website-elastic-api.webuycars.co.za/api/related/?size=10000"
+url <- "https://website-elastic-api.webuycars.co.za/api/related/?size=15000"
 
-df <- fetch_webuycars(url, max_retries = 10, wait_time = 20)
+response <- fetch_webuycars(url, max_retries = 20, wait_time = 20)
+
+raw_text <- content(response, as = "text", encoding = "UTF-8")
+
+df <- fromJSON(raw_text, flatten = TRUE)
 
 log_info("Retrieved {nrow(df)} rows from the webuycars API")
 
@@ -100,3 +129,15 @@ if (nrow(new_stock) > 0) {
 dates %>% 
   db_write_df("commodities.webuycars_dates", db = "greenplum_warehouse", type = "append")
 
+
+# DB STATUS ---------------------------------------------------------------
+
+stock_count <- db_query("
+                        SELECT
+                          COUNT(DISTINCT stock_number) AS cars
+                        FROM commodities.webuycars
+                         ", 
+                         db = "greenplum_warehouse"
+                        ) %>% pull(cars)
+
+log_info("-----------------Captured {stock_count} cars from webuycars-----------------")

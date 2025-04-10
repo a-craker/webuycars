@@ -95,3 +95,1858 @@ In addition: Warning message:
 In open.connection(con, "rb") :
   URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': Timeout of 60 seconds was reached
 Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+INFO [2025-03-01 05:00:25] Retrieved 9998 rows from the webuycars API
+INFO [2025-03-01 05:00:26] Identified 704 new rows for insertion
+INFO [2025-03-01 05:00:26] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_6438.csv
+INFO [2025-03-01 05:00:26] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_6438.csv
+INFO [2025-03-01 05:00:26] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-01 05:00:26] Deleting file /home/gpadmin/data/production/tmp/temp_table_6438.csv
+INFO [2025-03-01 05:00:26] Successfully wrote 704 new rows to the greenplum
+INFO [2025-03-01 05:00:26] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_358.csv
+INFO [2025-03-01 05:00:26] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_358.csv
+INFO [2025-03-01 05:00:26] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-01 05:00:26] Deleting file /home/gpadmin/data/production/tmp/temp_table_358.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In open.connection(con, "rb") :
+  cannot open URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': HTTP status was '502 Bad Gateway'
+INFO [2025-03-02 05:00:50] Retrieved 10000 rows from the webuycars API
+INFO [2025-03-02 05:00:50] Identified 738 new rows for insertion
+INFO [2025-03-02 05:00:50] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_4902.csv
+INFO [2025-03-02 05:00:50] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_4902.csv
+INFO [2025-03-02 05:00:50] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-02 05:00:50] Deleting file /home/gpadmin/data/production/tmp/temp_table_4902.csv
+INFO [2025-03-02 05:00:50] Successfully wrote 738 new rows to the greenplum
+INFO [2025-03-02 05:00:50] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_2254.csv
+INFO [2025-03-02 05:00:50] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_2254.csv
+INFO [2025-03-02 05:00:50] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-02 05:00:50] Deleting file /home/gpadmin/data/production/tmp/temp_table_2254.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In open.connection(con, "rb") :
+  cannot open URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': HTTP status was '502 Bad Gateway'
+INFO [2025-03-03 05:00:47] Retrieved 10000 rows from the webuycars API
+INFO [2025-03-03 05:00:47] Identified 165 new rows for insertion
+INFO [2025-03-03 05:00:47] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1495.csv
+INFO [2025-03-03 05:00:48] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1495.csv
+INFO [2025-03-03 05:00:48] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-03 05:00:48] Deleting file /home/gpadmin/data/production/tmp/temp_table_1495.csv
+INFO [2025-03-03 05:00:48] Successfully wrote 165 new rows to the greenplum
+INFO [2025-03-03 05:00:48] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1548.csv
+INFO [2025-03-03 05:00:48] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1548.csv
+INFO [2025-03-03 05:00:48] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-03 05:00:48] Deleting file /home/gpadmin/data/production/tmp/temp_table_1548.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In readBin(3L, raw(0), 32768L) :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'Transferred a partial file'
+INFO [2025-03-04 05:00:52] Retrieved 9908 rows from the webuycars API
+INFO [2025-03-04 05:00:53] Identified 445 new rows for insertion
+INFO [2025-03-04 05:00:53] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_3518.csv
+INFO [2025-03-04 05:00:53] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_3518.csv
+INFO [2025-03-04 05:00:53] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-04 05:00:53] Deleting file /home/gpadmin/data/production/tmp/temp_table_3518.csv
+INFO [2025-03-04 05:00:53] Successfully wrote 445 new rows to the greenplum
+INFO [2025-03-04 05:00:53] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1265.csv
+INFO [2025-03-04 05:00:53] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1265.csv
+INFO [2025-03-04 05:00:53] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-04 05:00:53] Deleting file /home/gpadmin/data/production/tmp/temp_table_1265.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+INFO [2025-03-05 05:00:23] Retrieved 9960 rows from the webuycars API
+INFO [2025-03-05 05:00:24] Identified 711 new rows for insertion
+INFO [2025-03-05 05:00:24] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_5825.csv
+INFO [2025-03-05 05:00:24] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_5825.csv
+INFO [2025-03-05 05:00:24] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-05 05:00:24] Deleting file /home/gpadmin/data/production/tmp/temp_table_5825.csv
+INFO [2025-03-05 05:00:24] Successfully wrote 711 new rows to the greenplum
+INFO [2025-03-05 05:00:24] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_8212.csv
+INFO [2025-03-05 05:00:24] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_8212.csv
+INFO [2025-03-05 05:00:24] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-05 05:00:24] Deleting file /home/gpadmin/data/production/tmp/temp_table_8212.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In open.connection(con, "rb") :
+  cannot open URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': HTTP status was '502 Bad Gateway'
+INFO [2025-03-06 05:00:49] Retrieved 10000 rows from the webuycars API
+INFO [2025-03-06 05:00:49] Identified 650 new rows for insertion
+INFO [2025-03-06 05:00:49] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_9038.csv
+INFO [2025-03-06 05:00:49] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_9038.csv
+INFO [2025-03-06 05:00:49] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-06 05:00:50] Deleting file /home/gpadmin/data/production/tmp/temp_table_9038.csv
+INFO [2025-03-06 05:00:50] Successfully wrote 650 new rows to the greenplum
+INFO [2025-03-06 05:00:50] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1376.csv
+INFO [2025-03-06 05:00:50] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1376.csv
+INFO [2025-03-06 05:00:50] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-06 05:00:50] Deleting file /home/gpadmin/data/production/tmp/temp_table_1376.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In open.connection(con, "rb") :
+  cannot open URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': HTTP status was '502 Bad Gateway'
+INFO [2025-03-07 05:00:50] Retrieved 10000 rows from the webuycars API
+INFO [2025-03-07 05:00:50] Identified 644 new rows for insertion
+INFO [2025-03-07 05:00:50] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_9094.csv
+INFO [2025-03-07 05:00:50] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_9094.csv
+INFO [2025-03-07 05:00:50] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-07 05:00:50] Deleting file /home/gpadmin/data/production/tmp/temp_table_9094.csv
+INFO [2025-03-07 05:00:50] Successfully wrote 644 new rows to the greenplum
+INFO [2025-03-07 05:00:50] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_2220.csv
+INFO [2025-03-07 05:00:50] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_2220.csv
+INFO [2025-03-07 05:00:50] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-07 05:00:50] Deleting file /home/gpadmin/data/production/tmp/temp_table_2220.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In open.connection(con, "rb") :
+  cannot open URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': HTTP status was '502 Bad Gateway'
+INFO [2025-03-08 05:00:50] Retrieved 10000 rows from the webuycars API
+INFO [2025-03-08 05:00:50] Identified 708 new rows for insertion
+INFO [2025-03-08 05:00:50] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_5438.csv
+INFO [2025-03-08 05:00:50] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_5438.csv
+INFO [2025-03-08 05:00:50] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-08 05:00:51] Deleting file /home/gpadmin/data/production/tmp/temp_table_5438.csv
+INFO [2025-03-08 05:00:51] Successfully wrote 708 new rows to the greenplum
+INFO [2025-03-08 05:00:51] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_4531.csv
+INFO [2025-03-08 05:00:51] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_4531.csv
+INFO [2025-03-08 05:00:51] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-08 05:00:51] Deleting file /home/gpadmin/data/production/tmp/temp_table_4531.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In open.connection(con, "rb") :
+  cannot open URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': HTTP status was '502 Bad Gateway'
+INFO [2025-03-09 05:00:48] Retrieved 10000 rows from the webuycars API
+INFO [2025-03-09 05:00:49] Identified 650 new rows for insertion
+INFO [2025-03-09 05:00:49] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_3285.csv
+INFO [2025-03-09 05:00:49] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_3285.csv
+INFO [2025-03-09 05:00:49] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-09 05:00:49] Deleting file /home/gpadmin/data/production/tmp/temp_table_3285.csv
+INFO [2025-03-09 05:00:49] Successfully wrote 650 new rows to the greenplum
+INFO [2025-03-09 05:00:49] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_6934.csv
+INFO [2025-03-09 05:00:49] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_6934.csv
+INFO [2025-03-09 05:00:49] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-09 05:00:49] Deleting file /home/gpadmin/data/production/tmp/temp_table_6934.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In open.connection(con, "rb") :
+  cannot open URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': HTTP status was '502 Bad Gateway'
+INFO [2025-03-10 05:00:46] Retrieved 10000 rows from the webuycars API
+INFO [2025-03-10 05:00:46] Identified 181 new rows for insertion
+INFO [2025-03-10 05:00:46] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_3591.csv
+INFO [2025-03-10 05:00:46] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_3591.csv
+INFO [2025-03-10 05:00:46] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-10 05:00:46] Deleting file /home/gpadmin/data/production/tmp/temp_table_3591.csv
+INFO [2025-03-10 05:00:46] Successfully wrote 181 new rows to the greenplum
+INFO [2025-03-10 05:00:46] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_4614.csv
+INFO [2025-03-10 05:00:46] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_4614.csv
+INFO [2025-03-10 05:00:46] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-10 05:00:46] Deleting file /home/gpadmin/data/production/tmp/temp_table_4614.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': Timeout of 60 seconds was reached
+INFO [2025-03-11 05:01:43] Retrieved 10000 rows from the webuycars API
+INFO [2025-03-11 05:01:44] Identified 369 new rows for insertion
+INFO [2025-03-11 05:01:44] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_718.csv
+INFO [2025-03-11 05:01:44] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_718.csv
+INFO [2025-03-11 05:01:44] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-11 05:01:44] Deleting file /home/gpadmin/data/production/tmp/temp_table_718.csv
+INFO [2025-03-11 05:01:44] Successfully wrote 369 new rows to the greenplum
+INFO [2025-03-11 05:01:44] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_6761.csv
+INFO [2025-03-11 05:01:44] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_6761.csv
+INFO [2025-03-11 05:01:44] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-11 05:01:44] Deleting file /home/gpadmin/data/production/tmp/temp_table_6761.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In open.connection(con, "rb") :
+  cannot open URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': HTTP status was '502 Bad Gateway'
+INFO [2025-03-12 05:00:48] Retrieved 10000 rows from the webuycars API
+INFO [2025-03-12 05:00:48] Identified 592 new rows for insertion
+INFO [2025-03-12 05:00:48] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_2491.csv
+INFO [2025-03-12 05:00:48] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_2491.csv
+INFO [2025-03-12 05:00:48] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-12 05:00:48] Deleting file /home/gpadmin/data/production/tmp/temp_table_2491.csv
+INFO [2025-03-12 05:00:48] Successfully wrote 592 new rows to the greenplum
+INFO [2025-03-12 05:00:48] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1104.csv
+INFO [2025-03-12 05:00:48] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1104.csv
+INFO [2025-03-12 05:00:48] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-12 05:00:48] Deleting file /home/gpadmin/data/production/tmp/temp_table_1104.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In open.connection(con, "rb") :
+  cannot open URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': HTTP status was '502 Bad Gateway'
+INFO [2025-03-13 05:00:48] Retrieved 10000 rows from the webuycars API
+INFO [2025-03-13 05:00:48] Identified 603 new rows for insertion
+INFO [2025-03-13 05:00:48] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_335.csv
+INFO [2025-03-13 05:00:48] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_335.csv
+INFO [2025-03-13 05:00:48] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-13 05:00:49] Deleting file /home/gpadmin/data/production/tmp/temp_table_335.csv
+INFO [2025-03-13 05:00:49] Successfully wrote 603 new rows to the greenplum
+INFO [2025-03-13 05:00:49] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_6158.csv
+INFO [2025-03-13 05:00:49] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_6158.csv
+INFO [2025-03-13 05:00:49] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-13 05:00:49] Deleting file /home/gpadmin/data/production/tmp/temp_table_6158.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+INFO [2025-03-14 05:00:24] Retrieved 10000 rows from the webuycars API
+INFO [2025-03-14 05:00:24] Identified 643 new rows for insertion
+INFO [2025-03-14 05:00:24] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_6783.csv
+INFO [2025-03-14 05:00:24] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_6783.csv
+INFO [2025-03-14 05:00:24] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-14 05:00:25] Deleting file /home/gpadmin/data/production/tmp/temp_table_6783.csv
+INFO [2025-03-14 05:00:25] Successfully wrote 643 new rows to the greenplum
+INFO [2025-03-14 05:00:25] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_3970.csv
+INFO [2025-03-14 05:00:25] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_3970.csv
+INFO [2025-03-14 05:00:25] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-14 05:00:25] Deleting file /home/gpadmin/data/production/tmp/temp_table_3970.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In open.connection(con, "rb") :
+  cannot open URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': HTTP status was '502 Bad Gateway'
+INFO [2025-03-15 05:00:47] Retrieved 10000 rows from the webuycars API
+INFO [2025-03-15 05:00:48] Identified 579 new rows for insertion
+INFO [2025-03-15 05:00:48] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_6453.csv
+INFO [2025-03-15 05:00:48] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_6453.csv
+INFO [2025-03-15 05:00:48] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-15 05:00:48] Deleting file /home/gpadmin/data/production/tmp/temp_table_6453.csv
+INFO [2025-03-15 05:00:48] Successfully wrote 579 new rows to the greenplum
+INFO [2025-03-15 05:00:48] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_8436.csv
+INFO [2025-03-15 05:00:48] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_8436.csv
+INFO [2025-03-15 05:00:48] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-15 05:00:48] Deleting file /home/gpadmin/data/production/tmp/temp_table_8436.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In open.connection(con, "rb") :
+  cannot open URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': HTTP status was '502 Bad Gateway'
+INFO [2025-03-16 05:00:49] Retrieved 10000 rows from the webuycars API
+INFO [2025-03-16 05:00:49] Identified 614 new rows for insertion
+INFO [2025-03-16 05:00:49] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1534.csv
+INFO [2025-03-16 05:00:49] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1534.csv
+INFO [2025-03-16 05:00:49] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-16 05:00:50] Deleting file /home/gpadmin/data/production/tmp/temp_table_1534.csv
+INFO [2025-03-16 05:00:50] Successfully wrote 614 new rows to the greenplum
+INFO [2025-03-16 05:00:50] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_2398.csv
+INFO [2025-03-16 05:00:50] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_2398.csv
+INFO [2025-03-16 05:00:50] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-16 05:00:50] Deleting file /home/gpadmin/data/production/tmp/temp_table_2398.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In open.connection(con, "rb") :
+  cannot open URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': HTTP status was '502 Bad Gateway'
+INFO [2025-03-17 05:00:46] Retrieved 10000 rows from the webuycars API
+INFO [2025-03-17 05:00:46] Identified 270 new rows for insertion
+INFO [2025-03-17 05:00:46] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_5467.csv
+INFO [2025-03-17 05:00:46] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_5467.csv
+INFO [2025-03-17 05:00:46] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-17 05:00:46] Deleting file /home/gpadmin/data/production/tmp/temp_table_5467.csv
+INFO [2025-03-17 05:00:46] Successfully wrote 270 new rows to the greenplum
+INFO [2025-03-17 05:00:46] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1201.csv
+INFO [2025-03-17 05:00:46] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_1201.csv
+INFO [2025-03-17 05:00:46] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-17 05:00:46] Deleting file /home/gpadmin/data/production/tmp/temp_table_1201.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In open.connection(con, "rb") :
+  cannot open URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': HTTP status was '502 Bad Gateway'
+INFO [2025-03-18 05:00:47] Retrieved 9753 rows from the webuycars API
+INFO [2025-03-18 05:00:47] Identified 305 new rows for insertion
+INFO [2025-03-18 05:00:47] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_3751.csv
+INFO [2025-03-18 05:00:47] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_3751.csv
+INFO [2025-03-18 05:00:47] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-18 05:00:48] Deleting file /home/gpadmin/data/production/tmp/temp_table_3751.csv
+INFO [2025-03-18 05:00:48] Successfully wrote 305 new rows to the greenplum
+INFO [2025-03-18 05:00:48] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_3324.csv
+INFO [2025-03-18 05:00:48] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_3324.csv
+INFO [2025-03-18 05:00:48] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-18 05:00:48] Deleting file /home/gpadmin/data/production/tmp/temp_table_3324.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Warning message:
+In open.connection(con, "rb") :
+  cannot open URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': HTTP status was '502 Bad Gateway'
+INFO [2025-03-19 05:00:48] Retrieved 9877 rows from the webuycars API
+INFO [2025-03-19 05:00:48] Identified 607 new rows for insertion
+INFO [2025-03-19 05:00:48] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_3179.csv
+INFO [2025-03-19 05:00:48] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_3179.csv
+INFO [2025-03-19 05:00:48] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-03-19 05:00:48] Deleting file /home/gpadmin/data/production/tmp/temp_table_3179.csv
+INFO [2025-03-19 05:00:48] Successfully wrote 607 new rows to the greenplum
+INFO [2025-03-19 05:00:48] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_2362.csv
+INFO [2025-03-19 05:00:48] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_2362.csv
+INFO [2025-03-19 05:00:48] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-03-19 05:00:48] Deleting file /home/gpadmin/data/production/tmp/temp_table_2362.csv
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 10, wait_time = 20) : 
+  Failed to retrieve data after10attempts. Attempt manually.
+In addition: Warning messages:
+1: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+2: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+3: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+4: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+5: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+6: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+7: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+8: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+9: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+10: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 10, wait_time = 20) : 
+  Failed to retrieve data after10attempts. Attempt manually.
+In addition: Warning messages:
+1: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+2: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+3: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+4: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+5: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+6: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+7: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+8: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+9: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+10: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 10, wait_time = 20) : 
+  Failed to retrieve data after10attempts. Attempt manually.
+In addition: Warning messages:
+1: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+2: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+3: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+4: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+5: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+6: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+7: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+8: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+9: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+10: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 10, wait_time = 20) : 
+  Failed to retrieve data after10attempts. Attempt manually.
+In addition: Warning messages:
+1: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+2: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+3: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+4: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+5: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+6: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+7: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+8: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+9: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+10: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 10, wait_time = 20) : 
+  Failed to retrieve data after10attempts. Attempt manually.
+In addition: Warning messages:
+1: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+2: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+3: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+4: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+5: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+6: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+7: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+8: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+9: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+10: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 10, wait_time = 20) : 
+  Failed to retrieve data after10attempts. Attempt manually.
+In addition: Warning messages:
+1: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+2: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+3: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+4: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+5: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+6: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+7: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+8: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+9: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+10: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 10, wait_time = 20) : 
+  Failed to retrieve data after10attempts. Attempt manually.
+In addition: Warning messages:
+1: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+2: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+3: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+4: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+5: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+6: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+7: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+8: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+9: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+10: In open.connection(con, "rb") :
+  URL 'https://website-elastic-api.webuycars.co.za/api/related/?size=10000': status was 'SSL peer certificate or SSH remote key was not OK'
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Attempt 11 failed. Retrying in 20 seconds...
+Attempt 12 failed. Retrying in 20 seconds...
+Attempt 13 failed. Retrying in 20 seconds...
+Attempt 14 failed. Retrying in 20 seconds...
+Attempt 15 failed. Retrying in 20 seconds...
+Attempt 16 failed. Retrying in 20 seconds...
+Attempt 17 failed. Retrying in 20 seconds...
+Attempt 18 failed. Retrying in 20 seconds...
+Attempt 19 failed. Retrying in 20 seconds...
+Attempt 20 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) : 
+  Failed to retrieve data after20attempts. Attempt manually.
+In addition: There were 20 warnings (use warnings() to see them)
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Attempt 11 failed. Retrying in 20 seconds...
+Attempt 12 failed. Retrying in 20 seconds...
+Attempt 13 failed. Retrying in 20 seconds...
+Attempt 14 failed. Retrying in 20 seconds...
+Attempt 15 failed. Retrying in 20 seconds...
+Attempt 16 failed. Retrying in 20 seconds...
+Attempt 17 failed. Retrying in 20 seconds...
+Attempt 18 failed. Retrying in 20 seconds...
+Attempt 19 failed. Retrying in 20 seconds...
+Attempt 20 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) : 
+  Failed to retrieve data after20attempts. Attempt manually.
+In addition: There were 20 warnings (use warnings() to see them)
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Attempt 11 failed. Retrying in 20 seconds...
+Attempt 12 failed. Retrying in 20 seconds...
+Attempt 13 failed. Retrying in 20 seconds...
+Attempt 14 failed. Retrying in 20 seconds...
+Attempt 15 failed. Retrying in 20 seconds...
+Attempt 16 failed. Retrying in 20 seconds...
+Attempt 17 failed. Retrying in 20 seconds...
+Attempt 18 failed. Retrying in 20 seconds...
+Attempt 19 failed. Retrying in 20 seconds...
+Attempt 20 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) : 
+  Failed to retrieve data after20attempts. Attempt manually.
+In addition: There were 20 warnings (use warnings() to see them)
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Attempt 11 failed. Retrying in 20 seconds...
+Attempt 12 failed. Retrying in 20 seconds...
+Attempt 13 failed. Retrying in 20 seconds...
+Attempt 14 failed. Retrying in 20 seconds...
+Attempt 15 failed. Retrying in 20 seconds...
+Attempt 16 failed. Retrying in 20 seconds...
+Attempt 17 failed. Retrying in 20 seconds...
+Attempt 18 failed. Retrying in 20 seconds...
+Attempt 19 failed. Retrying in 20 seconds...
+Attempt 20 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) : 
+  Failed to retrieve data after20attempts. Attempt manually.
+In addition: There were 20 warnings (use warnings() to see them)
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Attempt 11 failed. Retrying in 20 seconds...
+Attempt 12 failed. Retrying in 20 seconds...
+Attempt 13 failed. Retrying in 20 seconds...
+Attempt 14 failed. Retrying in 20 seconds...
+Attempt 15 failed. Retrying in 20 seconds...
+Attempt 16 failed. Retrying in 20 seconds...
+Attempt 17 failed. Retrying in 20 seconds...
+Attempt 18 failed. Retrying in 20 seconds...
+Attempt 19 failed. Retrying in 20 seconds...
+Attempt 20 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) : 
+  Failed to retrieve data after20attempts. Attempt manually.
+In addition: There were 20 warnings (use warnings() to see them)
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Attempt 11 failed. Retrying in 20 seconds...
+Attempt 12 failed. Retrying in 20 seconds...
+Attempt 13 failed. Retrying in 20 seconds...
+Attempt 14 failed. Retrying in 20 seconds...
+Attempt 15 failed. Retrying in 20 seconds...
+Attempt 16 failed. Retrying in 20 seconds...
+Attempt 17 failed. Retrying in 20 seconds...
+Attempt 18 failed. Retrying in 20 seconds...
+Attempt 19 failed. Retrying in 20 seconds...
+Attempt 20 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) : 
+  Failed to retrieve data after20attempts. Attempt manually.
+In addition: There were 20 warnings (use warnings() to see them)
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Attempt 11 failed. Retrying in 20 seconds...
+Attempt 12 failed. Retrying in 20 seconds...
+Attempt 13 failed. Retrying in 20 seconds...
+Attempt 14 failed. Retrying in 20 seconds...
+Attempt 15 failed. Retrying in 20 seconds...
+Attempt 16 failed. Retrying in 20 seconds...
+Attempt 17 failed. Retrying in 20 seconds...
+Attempt 18 failed. Retrying in 20 seconds...
+Attempt 19 failed. Retrying in 20 seconds...
+Attempt 20 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) : 
+  Failed to retrieve data after20attempts. Attempt manually.
+In addition: There were 20 warnings (use warnings() to see them)
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Attempt 11 failed. Retrying in 20 seconds...
+Attempt 12 failed. Retrying in 20 seconds...
+Attempt 13 failed. Retrying in 20 seconds...
+Attempt 14 failed. Retrying in 20 seconds...
+Attempt 15 failed. Retrying in 20 seconds...
+Attempt 16 failed. Retrying in 20 seconds...
+Attempt 17 failed. Retrying in 20 seconds...
+Attempt 18 failed. Retrying in 20 seconds...
+Attempt 19 failed. Retrying in 20 seconds...
+Attempt 20 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) : 
+  Failed to retrieve data after20attempts. Attempt manually.
+In addition: There were 20 warnings (use warnings() to see them)
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Attempt 11 failed. Retrying in 20 seconds...
+Attempt 12 failed. Retrying in 20 seconds...
+Attempt 13 failed. Retrying in 20 seconds...
+Attempt 14 failed. Retrying in 20 seconds...
+Attempt 15 failed. Retrying in 20 seconds...
+Attempt 16 failed. Retrying in 20 seconds...
+Attempt 17 failed. Retrying in 20 seconds...
+Attempt 18 failed. Retrying in 20 seconds...
+Attempt 19 failed. Retrying in 20 seconds...
+Attempt 20 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) : 
+  Failed to retrieve data after20attempts. Attempt manually.
+In addition: There were 20 warnings (use warnings() to see them)
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Attempt 11 failed. Retrying in 20 seconds...
+Attempt 12 failed. Retrying in 20 seconds...
+Attempt 13 failed. Retrying in 20 seconds...
+Attempt 14 failed. Retrying in 20 seconds...
+Attempt 15 failed. Retrying in 20 seconds...
+Attempt 16 failed. Retrying in 20 seconds...
+Attempt 17 failed. Retrying in 20 seconds...
+Attempt 18 failed. Retrying in 20 seconds...
+Attempt 19 failed. Retrying in 20 seconds...
+Attempt 20 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) : 
+  Failed to retrieve data after20attempts. Attempt manually.
+In addition: There were 20 warnings (use warnings() to see them)
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Attempt 11 failed. Retrying in 20 seconds...
+Attempt 12 failed. Retrying in 20 seconds...
+Attempt 13 failed. Retrying in 20 seconds...
+Attempt 14 failed. Retrying in 20 seconds...
+Attempt 15 failed. Retrying in 20 seconds...
+Attempt 16 failed. Retrying in 20 seconds...
+Attempt 17 failed. Retrying in 20 seconds...
+Attempt 18 failed. Retrying in 20 seconds...
+Attempt 19 failed. Retrying in 20 seconds...
+Attempt 20 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) : 
+  Failed to retrieve data after20attempts. Attempt manually.
+In addition: There were 20 warnings (use warnings() to see them)
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Attempt 11 failed. Retrying in 20 seconds...
+Attempt 12 failed. Retrying in 20 seconds...
+Attempt 13 failed. Retrying in 20 seconds...
+Attempt 14 failed. Retrying in 20 seconds...
+Attempt 15 failed. Retrying in 20 seconds...
+Attempt 16 failed. Retrying in 20 seconds...
+Attempt 17 failed. Retrying in 20 seconds...
+Attempt 18 failed. Retrying in 20 seconds...
+Attempt 19 failed. Retrying in 20 seconds...
+Attempt 20 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) : 
+  Failed to retrieve data after20attempts. Attempt manually.
+In addition: There were 20 warnings (use warnings() to see them)
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Attempt 11 failed. Retrying in 20 seconds...
+Attempt 12 failed. Retrying in 20 seconds...
+Attempt 13 failed. Retrying in 20 seconds...
+Attempt 14 failed. Retrying in 20 seconds...
+Attempt 15 failed. Retrying in 20 seconds...
+Attempt 16 failed. Retrying in 20 seconds...
+Attempt 17 failed. Retrying in 20 seconds...
+Attempt 18 failed. Retrying in 20 seconds...
+Attempt 19 failed. Retrying in 20 seconds...
+Attempt 20 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) : 
+  Failed to retrieve data after20attempts. Attempt manually.
+In addition: There were 20 warnings (use warnings() to see them)
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Attempt 11 failed. Retrying in 20 seconds...
+Attempt 12 failed. Retrying in 20 seconds...
+Attempt 13 failed. Retrying in 20 seconds...
+Attempt 14 failed. Retrying in 20 seconds...
+Attempt 15 failed. Retrying in 20 seconds...
+Attempt 16 failed. Retrying in 20 seconds...
+Attempt 17 failed. Retrying in 20 seconds...
+Attempt 18 failed. Retrying in 20 seconds...
+Attempt 19 failed. Retrying in 20 seconds...
+Attempt 20 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) : 
+  Failed to retrieve data after20attempts. Attempt manually.
+In addition: There were 20 warnings (use warnings() to see them)
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+Attempt 2 failed. Retrying in 20 seconds...
+Attempt 3 failed. Retrying in 20 seconds...
+Attempt 4 failed. Retrying in 20 seconds...
+Attempt 5 failed. Retrying in 20 seconds...
+Attempt 6 failed. Retrying in 20 seconds...
+Attempt 7 failed. Retrying in 20 seconds...
+Attempt 8 failed. Retrying in 20 seconds...
+Attempt 9 failed. Retrying in 20 seconds...
+Attempt 10 failed. Retrying in 20 seconds...
+Attempt 11 failed. Retrying in 20 seconds...
+Attempt 12 failed. Retrying in 20 seconds...
+Attempt 13 failed. Retrying in 20 seconds...
+Attempt 14 failed. Retrying in 20 seconds...
+Attempt 15 failed. Retrying in 20 seconds...
+Attempt 16 failed. Retrying in 20 seconds...
+Attempt 17 failed. Retrying in 20 seconds...
+Attempt 18 failed. Retrying in 20 seconds...
+Attempt 19 failed. Retrying in 20 seconds...
+Attempt 20 failed. Retrying in 20 seconds...
+Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) : 
+  Failed to retrieve data after20attempts. Attempt manually.
+In addition: There were 20 warnings (use warnings() to see them)
+Execution halted
