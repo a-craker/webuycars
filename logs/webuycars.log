@@ -1950,3 +1950,500 @@ Error in fetch_webuycars(url, max_retries = 20, wait_time = 20) :
   Failed to retrieve data after20attempts. Attempt manually.
 In addition: There were 20 warnings (use warnings() to see them)
 Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Error: lexical error: invalid char in json text.
+                                       <html>  <head><title>502 Bad Ga
+                     (right here) ------^
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Error: lexical error: invalid char in json text.
+                                       <html>  <head><title>502 Bad Ga
+                     (right here) ------^
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed. Retrying in 20 seconds...
+INFO [2025-04-13 05:00:54] Retrieved 10593 rows from the webuycars API
+INFO [2025-04-13 05:00:54] Identified 1197 new rows for insertion
+INFO [2025-04-13 05:00:54] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_2943.csv
+INFO [2025-04-13 05:00:55] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_2943.csv
+INFO [2025-04-13 05:00:55] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-04-13 05:00:55] Deleting file /home/gpadmin/data/production/tmp/temp_table_2943.csv
+INFO [2025-04-13 05:00:55] Successfully wrote 1197 new rows to the greenplum
+INFO [2025-04-13 05:00:55] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_8742.csv
+INFO [2025-04-13 05:00:55] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_8742.csv
+INFO [2025-04-13 05:00:55] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-04-13 05:00:55] Deleting file /home/gpadmin/data/production/tmp/temp_table_8742.csv
+INFO [2025-04-13 05:00:55] -----------------Captured 28586 cars from webuycars-----------------
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Error: lexical error: invalid char in json text.
+                                       <html>  <head><title>502 Bad Ga
+                     (right here) ------^
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+INFO [2025-04-15 05:00:27] Retrieved 10268 rows from the webuycars API
+INFO [2025-04-15 05:00:27] Identified 510 new rows for insertion
+INFO [2025-04-15 05:00:27] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_2365.csv
+INFO [2025-04-15 05:00:27] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_2365.csv
+INFO [2025-04-15 05:00:27] Writing to greenplum_warehouse table: commodities.webuycars
+INFO [2025-04-15 05:00:27] Deleting file /home/gpadmin/data/production/tmp/temp_table_2365.csv
+INFO [2025-04-15 05:00:27] Successfully wrote 510 new rows to the greenplum
+INFO [2025-04-15 05:00:27] Writing to temp file: /home/gpadmin/data/production/tmp/temp_table_8456.csv
+INFO [2025-04-15 05:00:28] Finished writing to temp file: /home/gpadmin/data/production/tmp/temp_table_8456.csv
+INFO [2025-04-15 05:00:28] Writing to greenplum_warehouse table: commodities.webuycars_dates
+INFO [2025-04-15 05:00:28] Deleting file /home/gpadmin/data/production/tmp/temp_table_8456.csv
+INFO [2025-04-15 05:00:28] -----------------Captured 29096 cars from webuycars-----------------
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Error: lexical error: invalid char in json text.
+                                       <html>  <head><title>502 Bad Ga
+                     (right here) ------^
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Error: lexical error: invalid char in json text.
+                                       <html>  <head><title>502 Bad Ga
+                     (right here) ------^
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Error: lexical error: invalid char in json text.
+                                       <html>  <head><title>502 Bad Ga
+                     (right here) ------^
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Error: lexical error: invalid char in json text.
+                                       <html>  <head><title>502 Bad Ga
+                     (right here) ------^
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Error: lexical error: invalid char in json text.
+                                       <html>  <head><title>502 Bad Ga
+                     (right here) ------^
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Error: lexical error: invalid char in json text.
+                                       <html>  <head><title>502 Bad Ga
+                     (right here) ------^
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Error: lexical error: invalid char in json text.
+                                       <html>  <head><title>502 Bad Ga
+                     (right here) ------^
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 2 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 3 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 4 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 5 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 6 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 7 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 8 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 9 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 10 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 11 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 12 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 13 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 14 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 15 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 16 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 17 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 18 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 19 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 20 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Failed after 20 attempts. Returning empty tibble.
+INFO [2025-04-23 05:06:44] Retrieved 0 rows from the webuycars API
+Error: object 'stock' not found
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 2 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 3 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 4 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 5 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 6 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 7 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 8 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 9 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 10 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 11 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 12 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 13 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 14 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 15 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 16 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 17 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 18 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 19 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 20 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Failed after 20 attempts. Returning empty tibble.
+INFO [2025-04-24 05:06:44] Retrieved 0 rows from the webuycars API
+Error: object 'stock' not found
+Execution halted
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Attempt 1 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 2 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 3 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 4 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 5 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 6 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 7 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 8 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 9 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 10 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 11 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 12 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 13 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 14 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 15 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 16 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 17 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 18 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 19 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Attempt 20 failed: SSL peer certificate or SSH remote key was not OK: [website-elastic-api.webuycars.co.za] SSL: no alternative certificate subject name matches target host name 'website-elastic-api.webuycars.co.za'
+Failed after 20 attempts. Returning empty tibble.
+INFO [2025-04-25 05:06:43] Retrieved 0 rows from the webuycars API
+Error: object 'stock' not found
+Execution halted

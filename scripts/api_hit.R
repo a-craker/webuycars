@@ -1,91 +1,61 @@
-library(httr)
-library(tidyverse)
-library(jsonlite)
-library(logger)
-library(janitor)
-library(tictoc)
-library(dbutils)
-library(purrr)
-library(logger)
+library(httr, quietly = TRUE)
+library(tidyverse, quietly = TRUE)
+library(jsonlite, quietly = TRUE)
+library(logger, quietly = TRUE)
+library(janitor, quietly = TRUE)
+library(tictoc, quietly = TRUE)
+library(dbutils, quietly = TRUE)
+library(purrr, quietly = TRUE)
+library(logger, quietly = TRUE)
+library(glue, quietly = TRUE)
 
 
 
-# FUNCTIONS ---------------------------------------------------------------
+# FETCH FUNCTION ----------------------------------------------------------
 
-fetch_webuycars <- function(url, max_retries, wait_time) {
+fetch_webuycars <- function(url, max_retries = 5, wait_time = 10) {
   
   attempt <- 1
+  
   while (attempt <= max_retries) {
-    
-    try({
+    tryCatch({
       response <- GET(url, config(ssl_verifypeer = FALSE))
-      if(!is.null(response)) {
+      
+      if (http_status(response)$category == "Success") {
+        result <- content(response, as = "text", encoding = "UTF-8") %>%
+          safely(~ fromJSON(.x, flatten = TRUE))()
         
-        return(response)
+        if (!is.null(result$result)) {
+          return(result$result)
+        } else {
+          message(glue("Attempt {attempt}: JSON parse failed."))
+        }
+        
+      } else {
+        message(glue("Attempt {attempt}: API returned status {status_code(response)}."))
       }
-    }, silent = TRUE)
+      
+    }, error = function(e) {
+      message(glue("Attempt {attempt} failed: {e$message}"))
+    })
     
-    message(paste("Attempt", attempt, "failed. Retrying in", wait_time, "seconds..."))
-    
-    Sys.sleep(wait_time)
     attempt <- attempt + 1
+    Sys.sleep(wait_time)
   }
   
-  stop("Failed to retrieve data after", max_retries, "attempts. Attempt manually.")
-  
+  message(glue("Failed after {max_retries} attempts. Returning empty tibble."))
+  return(tibble())
 }
 
-
-# fetch_webuycars <- function(url, max_retries, wait_time) {
-#   
-#   attempt <- 1
-#   while (attempt <= max_retries) {
-#     
-#     try({
-#       response <- fromJSON(url, simplifyVector = TRUE, flatten = TRUE)
-#       if(!is.null(response)) {
-#         
-#         return(response)
-#       }
-#     }, silent = TRUE)
-#     
-#     message(paste("Attempt", attempt, "failed. Retrying in", wait_time, "seconds..."))
-#     
-#     Sys.sleep(wait_time)
-#     attempt <- attempt + 1
-#   }
-#   
-#   stop("Failed to retrieve data after", max_retries, "attempts. Attempt manually.")
-#   
-# }
-
-# LOAD DATA ---------------------------------------------------------------
+# EXECUTE -------------------------------------------------------------------------
 
 url <- "https://website-elastic-api.webuycars.co.za/api/related/?size=15000"
 
-response <- fetch_webuycars(url, max_retries = 20, wait_time = 20)
+df <- fetch_webuycars(url, max_retries = 20, wait_time = 20)
 
-raw_text <- content(response, as = "text", encoding = "UTF-8")
+log_info(glue("Retrieved {nrow(df)} rows from the webuycars API"))
 
-df <- fromJSON(raw_text, flatten = TRUE)
 
-log_info("Retrieved {nrow(df)} rows from the webuycars API")
-
-cars <- df %>% 
-  as_tibble() %>% 
-  clean_names %>% 
-  select(-matches("image|auction|total_number_of_bids"), 
-         -data_timestamp) %>% 
-  select(-where(is.list)) %>% 
-  mutate(scrape_date = Sys.time())
-
-dates <- cars %>% 
-  select(scrape_date,
-         stock_number) %>% 
-  mutate(scrape_date = as_date(scrape_date))
-
-stock <- cars %>% 
-  select(-scrape_date)
 
 # CHECK DB ----------------------------------------------------------------
 
@@ -95,7 +65,7 @@ scraped_stock <- db_query(
         DISTINCT stock_number
       FROM commodities.webuycars
        ", 
-      db = "greenplum_warehouse") %>% 
+  db = "greenplum_warehouse") %>% 
   pull(stock_number)
 
 col_names <- db_query("
@@ -124,7 +94,7 @@ if (nrow(new_stock) > 0) {
 } else {
   log_info("No new rows found")
 }
-  
+
 
 dates %>% 
   db_write_df("commodities.webuycars_dates", db = "greenplum_warehouse", type = "append")
@@ -137,7 +107,8 @@ stock_count <- db_query("
                           COUNT(DISTINCT stock_number) AS cars
                         FROM commodities.webuycars
                          ", 
-                         db = "greenplum_warehouse"
-                        ) %>% pull(cars)
+                        db = "greenplum_warehouse"
+) %>% pull(cars)
 
 log_info("-----------------Captured {stock_count} cars from webuycars-----------------")
+
