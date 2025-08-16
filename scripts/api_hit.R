@@ -49,7 +49,7 @@ fetch_webuycars <- function(url, max_retries = 5, wait_time = 10) {
 
 # EXECUTE -------------------------------------------------------------------------
 
-url <- "https://website-elastic-api.webuycars.co.za/api/related/?size=15000"
+url <- Sys.getenv("webuycars_api")
 
 df <- fetch_webuycars(url, max_retries = 20, wait_time = 20)
 

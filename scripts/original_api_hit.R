@@ -62,7 +62,7 @@ fetch_webuycars <- function(url, max_retries, wait_time) {
 
 # LOAD DATA ---------------------------------------------------------------
 
-url <- "https://website-elastic-api.webuycars.co.za/api/related/?size=15000"
+url <- Sys.getenv("webuycars_api")
 
 response <- fetch_webuycars(url, max_retries = 20, wait_time = 20)
 
