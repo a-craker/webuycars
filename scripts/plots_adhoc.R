@@ -199,3 +199,72 @@ p4 <- cars_trim %>%
   theme_clean_sans
 
 
+# Linkedin - Chinese Entrants Donut ---------------------------------------
+
+cars <- read_csv("output/webuycars.csv")
+
+new_cn_entrants <- c(
+  "Chery", 
+  "Omoda", 
+  "Jaecoo",
+  "Baic", "Beijing",     
+  "MG", 
+  "Geely",
+  "Changan", "Chana",
+  "Haval", 
+  "GWM",                
+  "JMC",                
+  "Foton",
+  "King Long",
+  "JAC",                
+  "B.a.w"               
+)
+
+
+cars_cn <- cars %>%
+  mutate(
+    chinese_entrant = as.integer(
+      str_detect(make, regex(paste(new_cn_entrants, collapse = "|"), ignore_case = TRUE))
+    )
+  )
+
+composition <- cars_cn %>%
+  group_by(chinese_entrant) %>%
+  summarise(total = n_distinct(stock_number), .groups = "drop") %>%
+  mutate(
+    group = if_else(chinese_entrant == 1, "New Chinese entrants", "Other makes"),
+    share = total / sum(total)
+  )
+
+
+# ---- chart in the style of your mileage plot (palette, grids, theme) ----
+donut_plot <- composition %>%
+  mutate(label = percent(share, accuracy = 0.1)) %>%
+  ggplot(aes(x = 2, y = share, fill = group)) +
+  geom_col(color = "white", width = 1) +
+  coord_polar(theta = "y", start = 0) +
+  xlim(0.5, 2.5) +   # add donut hole
+  geom_text(aes(label = label),
+            position = position_stack(vjust = 0.5),
+            color = "white", size = 12, fontface = "bold") +
+  scale_fill_manual(values = c(
+    "New Chinese entrants" = "orange",
+    "Other makes" = "#8b0e3a"
+  )) +
+  labs(
+    title = "Second-Hand Market Composition on Webuycars",
+    subtitle = "Share of listings: New Chinese Entrants vs Other Makes",
+    fill = NULL
+  ) +
+  theme_void() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 28, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 25),
+    legend.title  = element_text(size = 25, face = "bold"),
+    legend.text   = element_text(size = 25),
+    legend.position = "bottom"
+  )
+
+ggsave("plots/donut_plot.png", donut_plot, width = 14, height = 15, dpi = 300)
+
+
